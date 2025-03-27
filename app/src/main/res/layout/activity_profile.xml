@@ -31,7 +31,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/poppins_bold"
-                android:lineSpacingExtra="24sp"
+                android:lineSpacingExtra="25sp"
                 android:text="Profile"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"

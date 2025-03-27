@@ -86,7 +86,7 @@
         android:padding="5dp"
         android:text="Back"
         android:textColor="#4a5759" />
-    <!-- App Title -->
+    <!-- app title -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
