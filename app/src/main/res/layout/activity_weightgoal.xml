@@ -1,5 +1,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
@@ -9,94 +10,116 @@
         android:id="@+id/goal_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="617dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="What's your goal?"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-medium"/>
-
+        android:textColor="#2b2d42"
+        android:textSize="24sp" />
+    <!-- subtext -->
     <TextView
         android:id="@+id/goal_subtext"
-        android:layout_width="193dp"
-        android:layout_height="55dp"
-        android:layout_below="@id/goal_question"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_above="@+id/lose_weight"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="77dp"
         android:fontFamily="sans-serif"
         android:text="We will calculate daily calories according to your goal"
         android:textAlignment="center"
-        android:textColor="#808080"
+        android:textColor="#4a5759"
         android:textSize="14sp" />
-
     <!-- lose weight -->
     <TextView
         android:id="@+id/lose_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/goal_subtext"
-        android:layout_marginTop="120dp"
+        android:layout_above="@+id/keep_weight"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:text="Lose weight"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="sans-serif"
         android:paddingHorizontal="100dp"
         android:paddingVertical="15dp"
-        android:textSize="20sp"
+        android:text="Lose weight"
         android:textColor="#000000"
-        android:fontFamily="sans-serif"/>
-
+        android:textSize="20sp" />
     <!-- keep weight -->
     <TextView
         android:id="@+id/keep_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lose_weight"
-        android:layout_marginTop="30dp"
+        android:layout_above="@+id/gain_weight"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:text="Keep weight"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif"
         android:paddingHorizontal="100dp"
         android:paddingVertical="15dp"
-        android:textSize="20sp"
+        android:text="Keep weight"
         android:textColor="#000000"
-        android:fontFamily="sans-serif"/>
-
+        android:textSize="20sp" />
     <!-- gain weight -->
     <TextView
         android:id="@+id/gain_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/keep_weight"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="286dp"
         android:fontFamily="sans-serif"
         android:paddingHorizontal="100dp"
         android:paddingVertical="15dp"
         android:text="Gain weight"
         android:textColor="#000000"
         android:textSize="20sp" />
-
     <!-- proceed -->
     <ImageButton
         android:id="@+id/proceed_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="98dp"
         android:background="@drawable/ellipse"
-        android:src="@drawable/next_arrow"
-        android:elevation="6dp"/>
-
+        android:elevation="6dp"
+        android:src="@drawable/next_arrow" />
+    <!-- back -->
     <TextView
         android:id="@+id/textView"
-        android:textColor="@color/grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="115dp"
         android:padding="5dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textColor="#4a5759" />
+    <!-- App Title -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/vitalsync" />
 
 </RelativeLayout>

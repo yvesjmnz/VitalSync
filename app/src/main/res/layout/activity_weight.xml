@@ -1,5 +1,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
@@ -7,77 +8,100 @@
     <!-- title -->
     <TextView
         android:id="@+id/title_text"
-        android:layout_width="wrap_content"
+        android:layout_width="272dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="What's your weight?"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-medium" />
-
+        android:textColor="#2b2d42"
+        android:textSize="24sp" />
+    <!-- subtext -->
     <TextView
         android:id="@+id/subtitle_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="528dp"
+        android:fontFamily="sans-serif"
         android:text="The more you weigh, the more calories your body burns"
         android:textAlignment="center"
-        android:textColor="#7A7A7A"
+        android:textColor="#4a5759"
         android:textSize="14sp" />
-
     <!-- weight input -->
     <EditText
         android:id="@+id/weight_input"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/subtitle_text"
-        android:layout_marginTop="100dp"
-        android:textColor="#000000"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginBottom="362dp"
         android:gravity="center"
-        android:textSize="18sp"
-        android:inputType="numberDecimal" />
-
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="18sp" />
     <!-- toggle button kg/lbs -->
     <TextView
         android:id="@+id/unit_toggle_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/weight_input"
         android:layout_alignBaseline="@id/weight_input"
-        android:layout_marginStart="10dp"
-        android:text="kg"
-        android:textColor="#00C853"
-        android:textSize="18sp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@id/weight_input"
         android:clickable="true"
         android:focusable="true"
-        android:padding="5dp" />
-
+        android:padding="5dp"
+        android:text="kg"
+        android:textColor="#b0c4b1"
+        android:textSize="18sp" />
+    <!-- proceed -->
     <ImageButton
         android:id="@+id/proceed_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="98dp"
         android:background="@drawable/ellipse"
-        android:src="@drawable/next_arrow"
-        android:elevation="6dp"/>
-
+        android:elevation="6dp"
+        android:src="@drawable/next_arrow" />
+    <!-- back -->
     <TextView
         android:id="@+id/textView"
-        android:textColor="@color/grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="115dp"
         android:padding="5dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textColor="#4a5759" />
+    <!--App Title -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/vitalsync" />
+
 
 </RelativeLayout>

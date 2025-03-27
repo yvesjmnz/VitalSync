@@ -33,14 +33,16 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
             android:text="Calorie Intake"
+            android:textColor="#2b2d42"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -67,23 +69,24 @@
                 android:id="@+id/caloriesLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Calories"
+                android:textColor="#4a5759"
                 android:textSize="16sp"
-                android:textColor="#808080"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/caloriesText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3400 cal"
+                android:textColor="#b0c4b1"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -104,23 +107,24 @@
                 android:id="@+id/proteinsLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Proteins"
+                android:textColor="#4a5759"
                 android:textSize="16sp"
-                android:textColor="#808080"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/proteinsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="225 g"
+                android:textColor="#b0c4b1"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -141,23 +145,24 @@
                 android:id="@+id/fats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Fats"
+                android:textColor="#4a5759"
                 android:textSize="16sp"
-                android:textColor="#808080"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/fatsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="118 g"
+                android:textColor="#b0c4b1"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -178,23 +183,24 @@
                 android:id="@+id/carbs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Carbs"
+                android:textColor="#4a5759"
                 android:textSize="16sp"
-                android:textColor="#808080"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/carbsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="340 g"
+                android:textColor="#b0c4b1"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -211,8 +217,8 @@
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#b0c4b1"
         android:text="Save"
-        android:backgroundTint="#35CC8C"
-        android:textColor="#FFFFFF"
-        android:layout_margin="8dp" />
+        android:textColor="#FFFFFF" />
 </LinearLayout>
