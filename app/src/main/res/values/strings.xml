@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">vitalsync</string>
+    <string name="today">Today</string>
+    <string name="proteins">Proteins</string>
+    <string name="water_intak">Water Intake</string>
+    <string name="water">Water</string>
+    <string name="liters_water">1.9 / 2.5L</string>
+    <string name="last_time_1">Last time 10:45 AM</string>
+    <string name="water_percent">76%</string>
+    <string name="default_web_client_id">85141645526-ibmo9oeqjc91rcgq8m60qn7hq72g8tg6.apps.googleusercontent.com</string>
+
+</resources>

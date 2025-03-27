@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background circle (unfilled part) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#E0E0E0" /> <!-- Background color for unfilled part -->
+        </shape>
+    </item>
+
+    <!-- Foreground (Progress) Circle -->
+    <item>
+        <clip>
+            <shape android:shape="oval">
+                <solid android:color="#00C853" /> <!-- Green progress color -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

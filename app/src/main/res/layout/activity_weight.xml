@@ -1,0 +1,83 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="What's your weight?"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="The more you weigh, the more calories your body burns"
+        android:textAlignment="center"
+        android:textColor="#7A7A7A"
+        android:textSize="14sp" />
+
+    <!-- weight input -->
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/subtitle_text"
+        android:layout_marginTop="100dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:inputType="numberDecimal" />
+
+    <!-- toggle button kg/lbs -->
+    <TextView
+        android:id="@+id/unit_toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/weight_input"
+        android:layout_alignBaseline="@id/weight_input"
+        android:layout_marginStart="10dp"
+        android:text="kg"
+        android:textColor="#00C853"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp" />
+
+    <ImageButton
+        android:id="@+id/proceed_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/next_arrow"
+        android:elevation="6dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="75dp"
+        android:padding="5dp"
+        android:text="Back" />
+
+</RelativeLayout>

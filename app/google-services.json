@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85141645526",
+    "project_id": "dailybite-335b5",
+    "storage_bucket": "dailybite-335b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85141645526:android:baae16e3fe8911940c0177",
+        "android_client_info": {
+          "package_name": "com.example.vitalsync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85141645526-ibmo9oeqjc91rcgq8m60qn7hq72g8tg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDaWdobgIEn5rLlcTFLAmhBUw5AnRj-rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85141645526-ibmo9oeqjc91rcgq8m60qn7hq72g8tg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

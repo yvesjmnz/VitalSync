@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="16dp">
+
+        <!-- close -->
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Close" />
+
+        <!-- title -->
+        <EditText
+            android:id="@+id/meal_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Meal #1"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:hint="Enter meal title"
+            android:inputType="textCapWords"
+            android:background="@null"/>
+
+
+        <!-- add -->
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Add" />
+    </LinearLayout>
+
+    <!-- summary -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingBottom="1dp">
+
+        <TextView
+            android:id="@+id/caloriesText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="416"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/proteinsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/fatsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/carbsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingBottom="16dp">
+        <TextView
+            android:id="@+id/caloriesTextLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cal"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/proteinsTextLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="g Protein"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/fatsTextLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="g Fat"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/carbsTextLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="g Carbs"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/sortOrderGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioCalories"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Calories" />
+
+        <RadioButton
+            android:id="@+id/radioProtein"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Proteins" />
+
+        <RadioButton
+            android:id="@+id/radioFats"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Fats" />
+
+        <RadioButton
+            android:id="@+id/radioCarbs"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="Carbs" />
+    </RadioGroup>
+
+
+    <!-- food items list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodRecyclerView"
+        android:layout_width="396dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <!-- save button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="#35CC8C"
+        android:text="Save"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

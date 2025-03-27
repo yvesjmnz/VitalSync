@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/meal_item_layout"
+    android:layout_width="380dp"
+    android:layout_height="89dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/meal"
+    android:clickable="true"
+    android:clipToOutline="true">
+
+    <TextView
+        android:id="@+id/meal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Meal Name"
+        android:textAppearance="@style/meal" />
+
+    <ImageView
+        android:id="@+id/clock_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_clock"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="57dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/meal_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meal_name"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="30dp"
+        android:text="Meal Time"
+        android:textAppearance="@style/time"/>
+
+    <TextView
+        android:id="@+id/meal_calories_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Calories"
+        android:textAppearance="@style/meal_cal"/>
+
+    <TextView
+        android:id="@+id/meal_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="85dp"
+        android:text="Calories"
+        android:textAppearance="@style/meal_cal" />
+</RelativeLayout>

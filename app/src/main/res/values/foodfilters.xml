@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="filter_options">
+        <item>Calories</item>
+        <item>Proteins</item>
+        <item>Carbs</item>
+        <item>Fats</item>
+    </string-array>
+</resources>

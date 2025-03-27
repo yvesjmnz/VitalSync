@@ -1,0 +1,174 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/recommended_pfc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Recommended PFC"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/pfc_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommended_pfc_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="You can always change PFC in the profile"
+        android:textAlignment="center"
+        android:textColor="#7A7A7A"
+        android:textSize="14sp" />
+
+    <!-- proteins -->
+    <Button
+        android:id="@+id/proteins_button"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pfc_subtitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="#35CC8C"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Proteins: 225g"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- fats -->
+    <Button
+        android:id="@+id/fats_button"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pfc_subtitle"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="57dp"
+        android:layout_toEndOf="@id/proteins_button"
+        android:backgroundTint="#35CC8C"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Fats: 118g"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- carbs -->
+    <Button
+        android:id="@+id/carbs_button"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proteins_button"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#35CC8C"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Carbs: 340g"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- carloies -->
+    <Button
+        android:id="@+id/calories_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proteins_button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/carbs_button"
+        android:backgroundTint="#35CC8C"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Calories: 3400"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- continue with google -->
+
+    <RelativeLayout
+        android:id="@+id/continue_with_google"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/continue_with_email"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/border_button">
+
+        <!-- google icon -->
+        <ImageView
+            android:id="@+id/google_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:contentDescription="Google Icon"
+            android:src="@drawable/google" />
+
+        <!-- continue with google text -->
+        <TextView
+            android:id="@+id/google_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Continue with Google"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- continue iwth email -->
+    <RelativeLayout
+        android:id="@+id/continue_with_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/calories_button"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/border_button">
+
+        <!-- email icon -->
+        <ImageView
+            android:id="@+id/email_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:contentDescription="Email Icon"
+            android:src="@drawable/ic_email" />
+
+        <!-- continue with email text -->
+        <TextView
+            android:id="@+id/email_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Continue with Email"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/back_button"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="75dp"
+        android:padding="5dp"
+        android:text="Back" />
+
+</RelativeLayout>

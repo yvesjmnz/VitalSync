@@ -1,0 +1,9 @@
+<resources>
+    <!-- Define the time_period array -->
+    <string-array name="time_period">
+        <item>From beginning</item>
+        <item>Last week</item>
+        <item>Last month</item>
+        <item>Last year</item>
+    </string-array>
+</resources>
