@@ -1,7 +1,7 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF">
 
     <!-- title -->
@@ -9,76 +9,93 @@
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="94dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="What’s your age?"
-        android:textSize="24sp"
         android:textColor="#000000"
-        android:fontFamily="sans-serif-medium" />
-
+        android:textSize="24sp" />
     <!-- subtext -->
+    <!-- age -->
     <TextView
         android:id="@+id/subtitle_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_above="@+id/age_input"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="123dp"
         android:text="Required number of calories varies with age"
         android:textAlignment="center"
-        android:textColor="#7A7A7A"
+        android:textColor="#4a5759"
         android:textSize="14sp" />
 
-    <!-- age -->
     <EditText
         android:id="@+id/age_input"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/subtitle_text"
-        android:layout_marginTop="100dp"
-        android:hint="|"
-        android:textColor="#000000"
+        android:layout_marginBottom="362dp"
         android:gravity="center"
-        android:textSize="18sp"
-        android:inputType="number" />
-
+        android:hint="|"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="18sp" />
     <!-- years label -->
     <TextView
         android:id="@+id/years_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/age_input"
         android:layout_alignBaseline="@id/age_input"
         android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/age_input"
+        android:padding="5dp"
         android:text="Years"
-        android:textColor="#00C853"
-        android:textSize="18sp"
-        android:padding="5dp" />
-
-    <!-- back -->
+        android:textColor="#b0c4b1"
+        android:textSize="18sp" />
+    <!-- proceed -->
     <ImageButton
         android:id="@+id/proceed_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="98dp"
         android:background="@drawable/ellipse"
-        android:src="@drawable/next_arrow"
-        android:elevation="6dp"/>
-
+        android:elevation="6dp"
+        android:src="@drawable/next_arrow" />
+    <!-- back -->
     <TextView
         android:id="@+id/textView"
-        android:textColor="@color/grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="115dp"
         android:padding="5dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textColor="#4a5759" />
+    <!-- App Title -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/vitalsync" />
+
 
 </RelativeLayout>
